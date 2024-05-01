@@ -40,12 +40,34 @@
     height: 240px;
     background-color: royalblue;
     color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+.hero .display {
+    min-width: none;
+    max-width: 750px;
+    display: flex;
+}
+
+.hero .display .entry {
+    flex:1;
+}
+
+.hero .display .image {
+    flex:1;
+    align-self: center;
+    text-align: center;
+    width: 350px;
+    height: 200px;
+    background-image: linear-gradient(royalblue, aliceblue);
 }
 
 .content {
     height: 560px;
     background-color: aliceblue;
     color: black;
+    display: flex;
 }
 
 .quote {
@@ -77,6 +99,17 @@ a:link, a:visited {
     text-decoration: none;
     color: silver;
 }
-a:hover, a:active {
+.hero a:hover, a:active {
     color: aliceblue;
+}
+.hero a:link, a:visited {
+    color: aliceblue;
+    background-color: palevioletred;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+}
+.hero a:hover, a:active {
+    color: white;
+    background-color: salmon;
 }
