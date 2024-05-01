@@ -37,7 +37,7 @@
 }
 
 .hero {
-    height: 240px;
+    min-height: 240px;
     background-color: royalblue;
     color: aliceblue;
     display: flex;
@@ -64,22 +64,56 @@
 }
 
 .content {
-    height: 560px;
+    min-height: 560px;
     background-color: aliceblue;
     color: black;
     display: flex;
 }
 
 .quote {
-    height: 200px;
+    min-height: 200px;
     background-color: rgba(65, 105, 225, 0.35);
-    color: black;
+    color: rgba(0, 0, 0, 0.65);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.quote #quote {
+    font-size: 24px;
+    font-style: italic;
+    min-width: none;
+    max-width: 680px;
+    align-self: center;
+    flex: 1;
+    border: 1px solid black;
+}
+
+.quote #citation {
+    font-weight: bold;
+    border: 1px solid black
 }
 
 .signup {
-    height: 160px;
+    min-height: 160px;
     background-color: aliceblue;
     color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.join {
+    flex: 1;
+    min-width: none;
+    max-width: 450px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.join .pitch {
+    flex: 1;
 }
 
 .footer {
@@ -102,14 +136,14 @@ a:link, a:visited {
 .hero a:hover, a:active {
     color: aliceblue;
 }
-.hero a:link, a:visited {
+a.button:link, a.button:visited {
     color: aliceblue;
     background-color: palevioletred;
     padding: 14px 25px;
     text-align: center;
     display: inline-block;
 }
-.hero a:hover, a:active {
+a.button:hover, a.button:active {
     color: white;
     background-color: salmon;
 }
